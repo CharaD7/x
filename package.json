@@ -1,0 +1,19 @@
+{
+  "name": "x",
+  "version": "1.0.0",
+  "description": "Desktop environment in the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharaD7/x.git"
+  },
+  "author": "Joy Ayitey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CharaD7/x/issues"
+  },
+  "homepage": "https://github.com/CharaD7/x#readme"
+}
