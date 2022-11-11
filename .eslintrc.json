@@ -30,10 +30,7 @@
   },
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     },
     "import/resolver": {
       "typescript": {}
@@ -53,10 +50,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".ts", ".tsx"]
       }
     ],
     "simple-import-sort/exports": "error",
@@ -71,13 +65,8 @@
         "omitLastInOneLineBlock": false
       }
     ],
-    "semi-style": [
-      "error",
-      "last"
-    ],
-    "no-extra-semi": [
-      "error"
-    ],
+    "semi-style": ["error", "last"],
+    "no-extra-semi": ["error"],
     "semi-spacing": [
       "error",
       {
