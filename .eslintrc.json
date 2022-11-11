@@ -16,18 +16,14 @@
     "plugin:import/warnings",
     "plugin:@next/next/recommended",
     "plugin:jsx-a11y/recommended",
-    // "plugin:react-hooks/recommended",
-    // always put prettier at last
     "prettier"
   ],
   "globals": {
     "React": "readonly"
-    // "Atomics": "readonly",
-    // "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
     "ecmaFeatures": {
-      "tsx": true // enable linting for tsx files
+      "tsx": true
     },
     "ecmaVersion": 12,
     "sourceType": "module"
@@ -52,7 +48,6 @@
     "react-hooks"
   ],
   "rules": {
-    // NextJs specific fix: allow jsx syntax in js files
     "react/jsx-filename-extension": [
       1,
       {
@@ -61,8 +56,7 @@
           ".tsx"
         ]
       }
-    ], //should add ".ts" if typescript project
-    // NextJs specific fix: suppress errors for missing 'import React' in files for nextjs
+    ],
     "react/react-in-jsx-scope": "off",
     "react/display-name": 1,
     "react/jsx-props-no-spreading": "off",
