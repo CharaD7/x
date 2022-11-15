@@ -3,14 +3,19 @@
     "browser": true,
     "commonjs": true,
     "es6": true,
+    "jest": true,
     "node": true
   },
   "parser": "@typescript-eslint/parser",
   "extends": [
     "airbnb",
     "airbnb/hooks",
+    "airbnb-typescript",
     "eslint:recommended",
     "next",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:jest/recommended",
     "plugin:react/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -25,19 +30,9 @@
     "ecmaFeatures": {
       "tsx": true
     },
+    "project": ["./tsconfig.json"],
     "ecmaVersion": 12,
     "sourceType": "module"
-  },
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
-    "import/resolver": {
-      "typescript": {}
-    },
-    "react": {
-      "version": "detect"
-    }
   },
   "plugins": [
     "react",
@@ -46,18 +41,26 @@
     "simple-import-sort"
   ],
   "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        ":": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
     "max-lines": ["error", 80],
+    "no-extra-semi": ["error"],
+    "react/display-name": 1,
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".ts", ".tsx"]
+        "extensions": [".tsx"]
       }
     ],
-    "simple-import-sort/exports": "error",
-    "simple-import-sort/imports": "error",
-    "react/react-in-jsx-scope": "off",
-    "react/display-name": 1,
     "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
     "semi": [
       "error",
       "always",
@@ -65,14 +68,26 @@
         "omitLastInOneLineBlock": false
       }
     ],
-    "semi-style": ["error", "last"],
-    "no-extra-semi": ["error"],
     "semi-spacing": [
       "error",
       {
         "before": false,
         "after": true
       }
-    ]
+    ],
+    "semi-style": ["error", "last"],
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+    // "react": {
+    //   "version": "detect"
+    // }
   }
 }
