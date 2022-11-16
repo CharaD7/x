@@ -34,12 +34,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "react-hooks",
-    "simple-import-sort"
-  ],
+  "plugins": ["@typescript-eslint", "jest", "react", "simple-import-sort"],
   "rules": {
     "import/extensions": [
       "error",
