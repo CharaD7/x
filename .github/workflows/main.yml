@@ -11,4 +11,4 @@ jobs:
         run: npm install
       - name: Run Tests
         run: npm test
-        uses: bhrajesh97/deployer@4.3.0
+        uses: stefanoeb/jest-action@1.0.3
