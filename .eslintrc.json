@@ -85,9 +85,9 @@
     },
     "import/resolver": {
       "typescript": {}
+    },
+    "react": {
+      "version": "detect"
     }
-    // "react": {
-    //   "version": "detect"
-    // }
   }
 }
