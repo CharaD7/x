@@ -1,9 +1,8 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Index from 'pages/index';
 
 test('renders index page', () => {
-  const { getByText } = render(<Index />);
-  const helloWorldElement = getByText('Hello, world!');
+  render(<Index />);
 
-  expect(helloWorldElement).toBeInTheDocument();
+  expect(screen.getByRole('heading')).toHaveTextContent('Hello, world!');
 });
