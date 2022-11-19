@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Index from 'pages/index';
+import Homepage from 'app/page';
 
-test('renders index page', () => {
-  render(<Index />);
+test('renders home page', () => {
+  render(<Homepage />);
 
   expect(screen.getByRole('heading')).toHaveTextContent('Hello, world!');
 });
