@@ -6,35 +6,46 @@
     "jest": true,
     "node": true
   },
-  "parser": "@typescript-eslint/parser",
   "extends": [
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
     "eslint:recommended",
     "next",
+    "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:jest/recommended",
+    "plugin:jest-dom/recommended",
+    "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:@next/next/recommended",
-    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
     "prettier"
   ],
   "globals": {
     "React": "readonly"
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-      "tsx": true
+      "jsx": true
     },
     "project": ["./tsconfig.json"],
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "jest", "react", "simple-import-sort"],
+  "plugins": [
+    "@next/next",
+    "@typescript-eslint",
+    "jest",
+    "react",
+    "simple-import-sort"
+  ],
   "rules": {
     "import/extensions": [
       "error",
@@ -62,7 +73,7 @@
       {
         "omitLastInOneLineBlock": false
       }
-    ],
+    ], // TODO: figure out why this is needed to set instead of it coming with the recommended extend
     "semi-spacing": [
       "error",
       {

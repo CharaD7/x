@@ -3,5 +3,6 @@
     "stylelint-config-standard-scss",
     "stylelint-config-prettier",
     "stylelint-config-sass-guidelines"
-  ]
+  ],
+  "ignoreFiles": ["app/head.tsx"]
 }
