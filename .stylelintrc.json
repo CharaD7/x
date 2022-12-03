@@ -4,5 +4,9 @@
     "stylelint-config-prettier",
     "stylelint-config-sass-guidelines"
   ],
-  "ignoreFiles": ["app/head.tsx", "app/index.ts"]
+  "ignoreFiles": [
+    "app/head.tsx",
+    "app/index.ts",
+    "__tests__/pages/page.spec.tsx"
+  ]
 }

@@ -48,6 +48,7 @@
   "license": "MIT",
   "lint-staged": {
     "*": "prettier --ignore-unknown --write",
+    "*.{tsx}": "jest",
     "*.{ts,tsx}": "stylelint --fix",
     "*.{js,ts,tsx}": "eslint --fix"
   },
