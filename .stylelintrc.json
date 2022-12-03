@@ -4,5 +4,5 @@
     "stylelint-config-prettier",
     "stylelint-config-sass-guidelines"
   ],
-  "ignoreFiles": ["app/head.tsx"]
+  "ignoreFiles": ["app/head.tsx", "app/index.ts"]
 }
